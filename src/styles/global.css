@@ -1,13 +1,12 @@
 :root {
   --color-bg: #f4f5f7;
-  --color-surface: rgba(255, 255, 255, 0.78);
+  --color-surface: rgba(255, 255, 255, 0.82);
   --color-surface-strong: #ffffff;
   --color-text: #1f2937;
   --color-text-soft: #5b6472;
   --color-line: rgba(148, 163, 184, 0.24);
   --color-primary: #34495e;
   --color-primary-strong: #22313f;
-  --color-accent: #7f8c8d;
   --color-success: #2d6a4f;
   --color-warning: #a67c00;
   --shadow-soft: 0 24px 64px rgba(31, 41, 55, 0.08);
@@ -263,6 +262,10 @@ button {
   gap: var(--space-4);
 }
 
+.center {
+  justify-content: center;
+}
+
 .stats-row,
 .result-stats-grid {
   flex-wrap: wrap;
@@ -410,10 +413,6 @@ button {
   color: var(--color-text-soft);
 }
 
-.button-row {
-  justify-content: center;
-}
-
 .leaderboard-head,
 .leaderboard-row {
   display: grid;
@@ -452,12 +451,9 @@ button {
 }
 
 @media (max-width: 900px) {
-  .topbar,
   .hero-grid,
   .blocks-grid,
-  .options-grid,
-  .leaderboard-head,
-  .leaderboard-row {
+  .options-grid {
     grid-template-columns: 1fr;
   }
 
@@ -476,7 +472,7 @@ button {
   }
 
   .leaderboard-row {
-    display: grid;
+    grid-template-columns: 1fr;
     gap: var(--space-2);
   }
 

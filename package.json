@@ -1,0 +1,9 @@
+{
+  "name": "law-enforcement-quiz",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Статический React-квиз по правоохранительным органам РФ, запускаемый без локальной сборки.",
+  "scripts": {
+    "serve": "python3 -m http.server 4173"
+  }
+}
